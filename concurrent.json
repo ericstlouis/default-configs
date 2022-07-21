@@ -1,0 +1,19 @@
+{
+  "name": "concurrent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:js": "nodemon dist/index.js",
+    "start:tsc": "tsc -w",
+    "start": "concurrently pnpm:start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19"
+  }
+}
